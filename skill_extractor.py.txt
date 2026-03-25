@@ -1,0 +1,31 @@
+# AI Resume Skill Extractor
+
+skills = [
+    "python",
+    "machine learning",
+    "deep learning",
+    "data analysis",
+    "tensorflow",
+    "pandas",
+    "numpy",
+    "sql",
+    "java"
+]
+
+print("Paste your resume text below:\n")
+
+resume = input().lower()
+
+found_skills = []
+
+for skill in skills:
+    if skill in resume:
+        found_skills.append(skill)
+
+print("\nSkills found in resume:")
+
+if found_skills:
+    for s in found_skills:
+        print("-", s)
+else:
+    print("No skills detected")
