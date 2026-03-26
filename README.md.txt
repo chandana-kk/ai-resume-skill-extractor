@@ -16,3 +16,5 @@ Java
 ## How to run
 
 python skill_extractor.py
+vs code
+google colab
